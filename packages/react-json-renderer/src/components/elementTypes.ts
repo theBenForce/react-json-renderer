@@ -2,5 +2,7 @@
 
 export enum ElementTypes {
   Root = "ROOT",
-  SetProperty = "SetProperty"
+  Speak = "speak",
+  Ask = "ask",
+  Tell = "tell"
 }

@@ -1,14 +1,20 @@
 {
   "name": "react-json-renderer",
   "version": "1.0.0",
-  "description": "React renderer to build json documents",
+  "description": "React renderer to build responses for voice-first",
   "main": "dist/index.js",
   "repository": "https://github.com/theBenForce/react-voice/tree/master/packages/react-json-renderer",
   "author": "Ben Force",
   "license": "MIT",
   "private": false,
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/react-reconciler": "^0.26.1",
+    "actions-on-google": "^2.14.0"
+  },
   "dependencies": {
     "react-reconciler": "^0.26.2"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
