@@ -7,7 +7,7 @@ import ResponseComponent from "../reconciler/responseComponent";
 
 let ROOT: ResponseRoot;
 
-export const getHostContextNode = (rootNode?: ResponseRoot) => {
+export const getRootHostContext = (rootNode?: ResponseRoot) => {
   if (typeof rootNode !== undefined) {
     ROOT = rootNode!;
   } else {

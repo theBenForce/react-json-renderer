@@ -31,7 +31,10 @@ export default class ResponseComponent<Props extends BasicComponentProps = Basic
       this.children = [];
     }
 
-    this.children.push(child);
+    this.children = [
+      ...this.children,
+      child
+    ];
   }
 
   removeChild<T extends ResponseComponent>(child: T) {

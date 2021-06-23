@@ -1,6 +1,7 @@
 import ResponseComponent, { BasicComponentProps } from "../reconciler/responseComponent";
 import { Platforms } from "../types/platforms";
 import ResponseRoot from "./ResponseRoot";
+import { inspect } from "util";
 
 export class tell extends ResponseComponent {
   constructor(root: ResponseRoot, props: BasicComponentProps) {
@@ -8,7 +9,6 @@ export class tell extends ResponseComponent {
   }
 
   render(platform: Platforms, result: any) {
-
     for (const child of this.children) {
       if (!(child instanceof ResponseComponent)) continue;
 

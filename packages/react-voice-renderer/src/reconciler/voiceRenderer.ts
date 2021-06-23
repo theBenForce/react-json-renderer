@@ -3,7 +3,7 @@ import Reconciler from "react-reconciler";
 import { ElementTypes } from "../components/elementTypes";
 import ResponseRoot from "../components/ResponseRoot";
 import { Platforms } from "../types/platforms";
-import { createElement, getHostContextNode } from "../utils/createElement";
+import { createElement, getRootHostContext } from "../utils/createElement";
 import ResponseComponent from "./responseComponent";
 
 const noop = () => { };
@@ -17,7 +17,7 @@ const appendChild = <Parent extends ResponseComponent, Child extends ResponseCom
   }
 };
 
-const ResponseRenderer = Reconciler({
+const ResponseRenderer = (request: any, platform: Platforms) => Reconciler({
   appendInitialChild: appendChild,
 
   createInstance: createElement,
@@ -47,9 +47,14 @@ const ResponseRenderer = Reconciler({
 
   resetTextContent: noop,
 
-  getRootHostContext: getHostContextNode,
+  getRootHostContext: (rootContainer) => ({
+    platform,
+    request,
+  }),
 
-  getChildHostContext: () => ({}),
+  getChildHostContext(parentHostContext) {
+    return parentHostContext;
+  },
 
   shouldSetTextContent: (type, props) => false,
 
@@ -84,14 +89,17 @@ const ResponseRenderer = Reconciler({
 
 interface RenderOptions {
   platform: Platforms;
+  request?: any;
 }
 
 export default {
   render(element: ReactElement, options: RenderOptions): Record<string, any> {
     const container = createElement(ElementTypes.Root) as ResponseRoot;
 
-    const node = ResponseRenderer.createContainer(container, 0, false, null);
-    ResponseRenderer.updateContainer(element, node, null, () => null);
+    const renderer = ResponseRenderer(options.request ?? {}, options.platform);
+
+    const node = renderer.createContainer(container, 0, false, null);
+    renderer.updateContainer(element, node, null, () => null);
 
     return container.render(options.platform);
   }
