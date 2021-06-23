@@ -34,9 +34,9 @@ export class speak extends ResponseComponent<SpeakProps> {
     }
 
     if (this.props.replace) {
-      result.response.outputSpeech.ssml = [...this.children];
+      result.response.outputSpeech.ssml = [this.children.join(" ")];
     } else {
-      result.response.outputSpeech.ssml.push(...this.children);
+      result.response.outputSpeech.ssml.push(this.children.join(""));
     }
 
     return result;

@@ -1,6 +1,7 @@
 import { ask } from "../components/ask";
 import { ElementTypes } from "../components/elementTypes";
 import ResponseRoot from "../components/ResponseRoot";
+import { session } from "../components/session";
 import { speak } from "../components/speak";
 import { tell } from "../components/tell";
 import ResponseComponent from "../reconciler/responseComponent";
@@ -27,6 +28,8 @@ export const createElement = (type: ElementTypes, props?: any, rootContainer?: R
       return new ask(rootContainer!, props);
     case ElementTypes.Tell:
       return new tell(rootContainer!, props);
+    case ElementTypes.Session:
+      return new session(rootContainer!, props);
     default:
       throw new Error(`Unknown Json element: ${type}`);
   }

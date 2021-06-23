@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "React renderer to build responses for voice-first platforms",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/theBenForce/react-voice/tree/master/packages/react-voice-renderer",
   "author": {
     "name": "Ben Force",
@@ -18,6 +19,7 @@
     "react-reconciler": "^0.26.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   }
 }

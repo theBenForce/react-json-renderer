@@ -1,0 +1,20 @@
+{
+  "name": "react-voice-parser",
+  "version": "1.0.0",
+  "description": "Parse voice-first platform requests into a common format",
+  "main": "dist/index.js",
+  "repository": "https://github.com/theBenForce/react-voice/tree/master/packages/react-voice-parser",
+  "author": {
+    "name": "Ben Force",
+    "url": "https://thebenforce.com"
+  },
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-voice-renderer": "1.0.0"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
