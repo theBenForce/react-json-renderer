@@ -1,0 +1,14 @@
+{
+  "name": "react-json-renderer",
+  "version": "1.0.0",
+  "description": "React renderer to build json documents",
+  "main": "dist/index.js",
+  "repository": "https://github.com/theBenForce/react-voice/tree/master/packages/react-json-renderer",
+  "author": "Ben Force",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {},
+  "dependencies": {
+    "react-reconciler": "^0.26.2"
+  }
+}
