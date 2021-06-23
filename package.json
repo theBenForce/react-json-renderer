@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/theBenForce/react-voice",
-  "author": "Ben Force",
+  "author": {
+    "name": "Ben Force",
+    "url": "https://thebenforce.com"
+  },
   "license": "MIT",
   "private": true,
   "devDependencies": {
@@ -24,6 +27,7 @@
     "lerna": "^4.0.0",
     "react": "^17.0.2",
     "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
     "typescript": "^4.3.4"
   },
   "scripts": {
@@ -41,7 +45,8 @@
   },
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "samples/*"
     ]
   },
   "husky": {

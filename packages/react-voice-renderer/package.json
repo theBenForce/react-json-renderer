@@ -4,7 +4,10 @@
   "description": "React renderer to build responses for voice-first platforms",
   "main": "dist/index.js",
   "repository": "https://github.com/theBenForce/react-voice/tree/master/packages/react-voice-renderer",
-  "author": "Ben Force",
+  "author": {
+    "name": "Ben Force",
+    "url": "https://thebenforce.com"
+  },
   "license": "MIT",
   "private": false,
   "devDependencies": {
