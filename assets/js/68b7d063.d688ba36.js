@@ -1,0 +1,1 @@
+(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[23],{5555:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/react-voice/blog/tags","slug":"hello","name":"hello","count":2,"permalink":"/react-voice/blog/tags/hello"}')}}]);
