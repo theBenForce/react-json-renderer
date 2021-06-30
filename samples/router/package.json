@@ -1,5 +1,5 @@
 {
-  "name": "simple-response",
+  "name": "router-example",
   "version": "1.0.0",
   "description": "A simple express server that renders an SSML repsonse",
   "main": "dist/index.js",

@@ -1,0 +1,25 @@
+{
+  "name": "react-voice",
+  "version": "1.0.0",
+  "description": "React renderer to build responses for voice-first platforms",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/theBenForce/react-voice/tree/master/packages/react-voice-renderer",
+  "author": {
+    "name": "Ben Force",
+    "url": "https://thebenforce.com"
+  },
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/react-reconciler": "^0.26.1",
+    "actions-on-google": "^2.14.0"
+  },
+  "dependencies": {
+    "react-reconciler": "^0.26.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  }
+}

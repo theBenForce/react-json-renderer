@@ -2,7 +2,7 @@ import Express from "express";
 import React from "react";
 
 import VoiceRenderer, { Platforms } from "react-voice-renderer/src";
-import { VoiceRequestProvider, useVoiceRequest } from "react-voice-parser/src";
+import { VoiceRequestProvider, useVoiceRequest, parseRequest } from "react-voice-parser/src";
 
 import { inspect } from "util";
 import { parseRequest } from "../../../packages/react-voice-parser/src/request";

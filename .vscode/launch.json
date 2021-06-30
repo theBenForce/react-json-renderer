@@ -22,6 +22,25 @@
       "outFiles": [
         "${workspaceFolder}/dist/**/*.js"
       ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Routing Response",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "runtimeArgs": [
+        "-r",
+        "source-map-support/register",
+        "-r",
+        "ts-node/register"
+      ],
+      "program": "${workspaceFolder}/samples/router/src/index.tsx",
+      "cwd": "${workspaceFolder}/samples/router",
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"
+      ]
     }
   ]
 }
