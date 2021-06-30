@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'React Voice',
   tagline: 'Simplifying voice-first development',
-  url: 'https://react-voice.github.io',
+  url: 'https://thebenforce.github.io/react-voice/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
