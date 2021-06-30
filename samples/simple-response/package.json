@@ -13,7 +13,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "react": "^17.0.2",
-    "react-voice-renderer": "1.0.0"
+    "react-voice": "1.0.0"
   },
   "scripts": {
     "start": "ts-node ./src/index.tsx"
