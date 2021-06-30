@@ -6,7 +6,7 @@ module.exports = {
   title: 'React Voice',
   tagline: 'Simplifying voice-first development',
   url: 'https://thebenforce.github.io/react-voice/',
-  baseUrl: '/',
+  baseUrl: '/react-voice/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
