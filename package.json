@@ -34,6 +34,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --stream",
+    "deploy:docs": "cd docs && yarn deploy",
     "test": "lerna run test --parallel",
     "lint": "lerna run lint --parallel",
     "publish:version": "lerna version --conventional-commits --yes",
@@ -47,7 +48,8 @@
   "workspaces": {
     "packages": [
       "packages/*",
-      "samples/*"
+      "samples/*",
+      "docs"
     ]
   },
   "husky": {
